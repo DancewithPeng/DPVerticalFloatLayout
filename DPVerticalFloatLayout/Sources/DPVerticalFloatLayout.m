@@ -32,7 +32,8 @@
             continue;
         }
         
-        if (abs(attribute.center.y - CGRectGetMidY(lastItemFrame)) > 0.01) { // 换行
+        // 元素的Y轴中心点相差超过1个物理像素，就认为不是同一行
+        if (fabs(attribute.center.y - CGRectGetMidY(lastItemFrame)) > 1.0/UIScreen.mainScreen.scale) { // 换行
             CGRect targetRect = attribute.frame;
             UIEdgeInsets sectionInsets = UIEdgeInsetsZero;
             

@@ -39,7 +39,8 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(arc4random()%200 + 50, 100);
+    return CGSizeMake(arc4random()%200 + 50, arc4random()%200 + 50);
+//    return CGSizeMake(arc4random()%200 + 50, 100);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
