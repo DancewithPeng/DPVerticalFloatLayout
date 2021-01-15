@@ -13,7 +13,7 @@
 在`Podfile`文件中加入
 
 ```ruby
-pod 'DPVerticalFloatLayout', '~> 1.0'
+pod 'DPVerticalFloatLayout', '~> 1.0.0'
 ```
 
 
